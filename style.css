@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+/*Main Screen Content*/
+.main {
+    background-image: url(/assets/images/bg.jpg);
+    height: 644px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.60;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+
+/*Nav-Bar Content*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    margin: auto;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 9;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+
+
+/*Picture Content*/
+.hero {
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    text-align: center;
+
+}
+
+.hero>:first-child {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+}
+
+.hero input {
+    padding: 7px 100px 8px 14px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border-radius: 1px solid rgba(238, 230, 230, 0.4);
+}
+
+.sepration {
+    height: 7px;
+    background-color: rgb(48, 43, 43);
+}
+
+/*buttomns*/
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(248, 242, 233, 0.021);
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn-signin {
+    background-color: red;
+    color: white;
+
+}
+
+.btngetstarted {
+    background-color: red;
+    color: white;
+    padding: 5px 25px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+/*first section*/
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.video-1 {
+    position: absolute;
+    top: 121px;
+    right: 0;
+    width: 480px;
+}
+.vedio-3 {
+    position: absolute;
+    top: 82px;
+    right: 95px;
+    width: 350px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+/* Responsive font-size for mobile devices */
+@media (max-width: 768px) {
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+/*FAQ*/
+.faq h2{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 0px 9px 0px;
+    font-size: 54px;
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+    width: 60vw;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.question {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 16px 0px 0px 17px;
+    background-color: #3d3a3ac9;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question:after {
+    content: '\002B'; 
+    font-size: 1.5em;
+    padding-right: 17px;
+} 
+
+.answer {
+    display: none;
+    padding: 10px;
+    background-color: #3d3a3ac9;
+    color: white;
+}
+
+input[type="checkbox"]:checked+.question+.answer {
+    display: block;
+}
+
+.subs{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+.test input{
+        padding: 7px 100px 8px 14px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 700;
+        color: white;
+        background-color: rgba(23, 23, 23, 0.7);
+        border-radius: 1px solid rgba(238, 230, 230, 0.4);
+    
+}
+.subscribe{
+    margin-bottom: 55px;
+}
+
+/* Responsive font-size for mobile devices */
+@media (max-width: 768px) {
+    .faq h2 {
+        font-size: 24px;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .question:after {
+        font-size: 1em;
+        padding-right: 8px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+    .subs{
+        padding: 20px 130px;
+    }
+    .test input {
+        padding: 7px;
+        
+        font-size: 14px; 
+    }
+
+    .subscribe {
+        margin-bottom: 20px; 
+    }
+}
+/*Footer Section*/
+.footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+
+}
+footer .questions{
+    padding: 34px 0px;
+}
+
+.option{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.option a{
+    
+    color: white;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        margin: auto;
+    }
+    footer .questions {
+        padding: 10px 0;
+    }
+
+    .option {
+       display: grid;
+       gap: 7px;
+    }
+
+    .footer-item {
+        text-align: center; 
+        gap: 10px;
+    }
+}
